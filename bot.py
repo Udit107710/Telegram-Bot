@@ -9,9 +9,7 @@ from telegram.ext import Updater,CommandHandler,MessageHandler, Filters
 def main():
 
     token = os.environ['TELEGRAM_TOKEN']
-
     updater = Updater(token)
-
     dispatcher = updater.dispatcher
 
     def startCommand(bot, update):
